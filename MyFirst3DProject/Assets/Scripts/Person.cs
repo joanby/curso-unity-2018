@@ -2,30 +2,38 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Person : MonoBehaviour {
+public class Person {
 
-    public string firstName;
-    public string lastName;
+    private string firstName;
+    private string lastName;
     public int age;
     public bool isMale;
 
     public Person spouse;
 
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    //Constructor por defecto
+    public Person(){
+        
+    }
+
+    public Person(string pFirstName, string pLastName){
+        this.firstName = pFirstName;
+        this.lastName = pLastName;
+    }
+
+    public Person(string firstName, string lastName, int age, bool isMale){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.isMale = isMale;
+     }
+
 
 
     public bool IsMarriedWith(Person otherPerson)
     {
-        if(this.spouse.firstName == null){
+        if(spouse == null){
             Debug.Log("No está casado");
             return false;
             //aquí no está casado
@@ -43,4 +51,28 @@ public class Person : MonoBehaviour {
             }
         }
     }
+
+
+    public static void SayHello(){
+        Debug.Log("Hola que tal!");
+    }
+
+
+    /*SETTERS y GETTERS*/
+    public void setFirstName(string firstName){
+        this.firstName = firstName;
+    }
+
+    public void setLastName(string lastName){
+        this.lastName = lastName;
+    }
+
+    public string getFirstName(){
+        return this.firstName;
+    }
+
+    public string getLastName(){
+        return this.lastName;
+    }
+
 }

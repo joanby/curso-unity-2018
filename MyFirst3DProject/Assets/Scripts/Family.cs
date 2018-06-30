@@ -12,39 +12,37 @@ public class Family : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
        
-        father = new Person();//instanciar
+        father = new Person("Anakin", "Skywalker");//instanciar
         //después de instanciar, podemos inicializar las variables
-        father.firstName = "Anakin";
-        father.lastName = "Skywalker";
         father.age = 35;
         father.isMale = true;
 
-        this.mother = new Person();
-        mother.firstName = "Padme";
-        mother.lastName = "Amidala";
-        mother.age = 28;
-        mother.isMale = false;
-
+        mother = new Person("Padme", "Amidala", 28, false);
+       
         father.spouse = mother;
         mother.spouse = father;
 
-        son = new Person();
-        son.firstName = "Luke";
-        son.lastName = "Skywalker";
+        son = new Person("Luke", "Skywalker");
         son.age = 8;
         son.isMale = true;
 
-
-        Debug.Log(father.firstName + " y " + mother.firstName + " tienen un hijo llamado " +
-                  son.firstName);
+        son.spouse = null;
 
 
-        if(mother.IsMarriedWith(father)){
-            Debug.Log(father.firstName + " y " + mother.firstName + " están casados");
+        son.setFirstName("Antonio");
+        son.setLastName("Banderas");
+
+        Debug.Log(father.getFirstName() + " y " + mother.getFirstName() + " tienen un hijo llamado " +
+                  son.getFirstName());
+
+
+        if(father.IsMarriedWith(mother)){
+            Debug.Log(father.getFirstName() + " y " + mother.getFirstName() + " están casados");
         } else{
-            Debug.Log(father.firstName + " y " + mother.firstName + " no están casados");
+            Debug.Log(father.getFirstName() + " y " + mother.getFirstName() + " no están casados");
         }
 
+        Person.SayHello();
 
 	}
 	
