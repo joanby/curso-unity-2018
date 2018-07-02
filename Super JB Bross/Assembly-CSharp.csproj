@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/JuanGabriel/Developer/Unity Projects/curso-unity-2018/Super JB Bross/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
