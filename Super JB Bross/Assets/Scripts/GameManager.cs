@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour {
 
 	private void Update()
 	{
-        if(Input.GetButtonDown("Start")){
+        if(Input.GetButtonDown("Start") && this.currentGameState != GameState.inGame){
             StartGame();
         }
 
@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour {
 	//Método encargado de iniciar el juego
 	public void StartGame(){
         SetGameState(GameState.inGame);
+        PlayerController.sharedInstance.StartGame();
     }
 
     //Método que se llamará cuando el jugador muera

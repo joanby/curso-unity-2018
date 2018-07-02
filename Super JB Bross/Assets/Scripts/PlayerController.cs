@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,7 +6,6 @@ public class PlayerController : MonoBehaviour {
 
 
     public static PlayerController sharedInstance;
-
 
     public float jumpForce = 5f;
 
@@ -16,16 +15,27 @@ public class PlayerController : MonoBehaviour {
 
     private Rigidbody2D rigidbody;
 
+    private Vector3 startPosition;
+
+
+    //Esta variable sirve para detectar la capa del suelo...
+    public LayerMask groundLayer;
+
+
 	void Awake()
 	{
         sharedInstance = this;
         rigidbody = GetComponent<Rigidbody2D>();
+        //La variable start position toma el valor de donde empieza la primera
+        //vez nuestro personaje
+        startPosition = this.transform.position;
 	}
 
-	// Use this for initialization
-	void Start () {
+	public void StartGame () {
         animator.SetBool("isAlive", true);
         animator.SetBool("isGrounded", true);
+        //Cada vez que reiniciamos, ponemos al personaje en la start position
+        this.transform.position = startPosition;
 	}
 	
 	// Update is called once per frame
@@ -69,9 +79,6 @@ public class PlayerController : MonoBehaviour {
             rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
     }
-
-    //Esta variable sirve para detectar la capa del suelo...
-    public LayerMask groundLayer;
 
     bool IsTouchingTheGround(){//devuelve true si estamos tocando el suelo y false en otro caso
 
