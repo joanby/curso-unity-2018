@@ -25,25 +25,32 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-        if(Input.GetKeyDown(KeyCode.Space)){
-            //Aquí, el usuario acaba de bajar la tecla espacio
-            Jump();
-        }
+        //Solo debemos dejar que salte, si el juego está en modo InGame
+        if (GameManager.sharedInstance.currentGameState == GameState.inGame)
+        {
+            if (Input.GetKeyDown(KeyCode.Space)||Input.GetMouseButtonDown(0))
+            {
+                //Aquí, el usuario acaba de bajar la tecla espacio
+                Jump();
+            }
 
-        //Asignamos a la animación el mismo valor que el método IsTouchingTheGround
-        //que es true si tocamos el suelo y false en caso contrario
-        animator.SetBool("isGrounded", IsTouchingTheGround());
+            //Asignamos a la animación el mismo valor que el método IsTouchingTheGround
+            //que es true si tocamos el suelo y false en caso contrario
+            animator.SetBool("isGrounded", IsTouchingTheGround());
+        }
 	}
 
 	void FixedUpdate()
 	{
-        
-        if (rigidbody.velocity.x < runningSpeed)
+        //Solo nos movemos si estamos en el modo InGame
+        if (GameManager.sharedInstance.currentGameState == GameState.inGame)
         {
-            rigidbody.velocity = new Vector2(runningSpeed, //velocidad en el eje de las x
-                                             rigidbody.velocity.y //velocidad en el eje de las y
-                                            );
+            if (rigidbody.velocity.x < runningSpeed)
+            {
+                rigidbody.velocity = new Vector2(runningSpeed, //velocidad en el eje de las x
+                                                 rigidbody.velocity.y //velocidad en el eje de las y
+                                                );
+            }
         }
 
 	}
