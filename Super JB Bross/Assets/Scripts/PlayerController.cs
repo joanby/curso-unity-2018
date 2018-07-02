@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
+
+    public static PlayerController sharedInstance;
+
+
     public float jumpForce = 5f;
 
     public Animator animator;
@@ -14,6 +18,7 @@ public class PlayerController : MonoBehaviour {
 
 	void Awake()
 	{
+        sharedInstance = this;
         rigidbody = GetComponent<Rigidbody2D>();
 	}
 
@@ -81,4 +86,14 @@ public class PlayerController : MonoBehaviour {
         }
 
     }
+
+
+
+    public void Kill()
+    {
+        GameManager.sharedInstance.GameOver();
+        this.animator.SetBool("isAlive", false);
+    }
+
+
 }

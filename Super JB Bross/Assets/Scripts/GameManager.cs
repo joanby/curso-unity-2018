@@ -30,8 +30,12 @@ public class GameManager : MonoBehaviour {
 
 	private void Update()
 	{
-        if(Input.GetKeyDown(KeyCode.S)){
+        if(Input.GetButtonDown("Start")){
             StartGame();
+        }
+
+        if(Input.GetButtonDown("Pause")){
+            BackToMenu();
         }
 	}
 
