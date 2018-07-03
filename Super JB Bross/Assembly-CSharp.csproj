@@ -61,8 +61,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\KillTrigger.cs" />
+    <Compile Include="Assets\Scripts\LeaveZone.cs" />
     <Compile Include="Assets\Scripts\LevelBlock.cs" />
     <Compile Include="Assets\Scripts\LevelGenerator.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
