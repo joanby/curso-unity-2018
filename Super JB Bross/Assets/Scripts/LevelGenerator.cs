@@ -6,6 +6,8 @@ public class LevelGenerator : MonoBehaviour {
 
     public static LevelGenerator sharedInstance;
 
+    public LevelBlock firstBlock;
+
     //[nivel_1, nivel_2, nivel_3, nivel_4,..., nivel_n]
     public List<LevelBlock> allTheLevelBlocks = new List<LevelBlock>();
 
@@ -30,16 +32,19 @@ public class LevelGenerator : MonoBehaviour {
         int randomIndex = Random.Range(0, allTheLevelBlocks.Count);
 
         //Creamos una copia del bloque de nivel desde la carpeta assets hasta la escena
-        LevelBlock currentBlock = (LevelBlock)Instantiate(allTheLevelBlocks[randomIndex]);
-        //Pone el nuevo bloque de nivel como hijo del Level Generator
-        currentBlock.transform.SetParent(this.transform, false);
+        LevelBlock currentBlock;
 
         Vector3 spawnPosition = Vector3.zero;
 
         if(currentBlocks.Count == 0)
         {
+            currentBlock = (LevelBlock)Instantiate(firstBlock);
+            currentBlock.transform.SetParent(this.transform, false);
             spawnPosition = levelStartPoint.position;
         } else {
+            currentBlock = (LevelBlock)Instantiate(allTheLevelBlocks[randomIndex]);
+            //Pone el nuevo bloque de nivel como hijo del Level Generator
+            currentBlock.transform.SetParent(this.transform, false);
             spawnPosition = currentBlocks[currentBlocks.Count - 1].exitPoint.position;
         }
 

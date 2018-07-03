@@ -18,6 +18,9 @@ public class GameManager : MonoBehaviour {
     //Al inicio, queremos que empiece en el menú principal
     public GameState currentGameState = GameState.menu;
 
+    public Canvas menuCanvas, gameCanvas, gameOverCanvas;
+
+
 	private void Awake()
 	{
         sharedInstance = this;
@@ -42,6 +45,18 @@ public class GameManager : MonoBehaviour {
 	//Método encargado de iniciar el juego
 	public void StartGame(){
         SetGameState(GameState.inGame);
+
+
+        GameObject camera = GameObject.FindGameObjectWithTag("MainCamera");
+        CameraFollow cameraFollow = camera.GetComponent<CameraFollow>();
+        cameraFollow.ResetCameraPosition();
+
+        if (PlayerController.sharedInstance.transform.position.x > 10)
+        {
+            LevelGenerator.sharedInstance.RemoveAllTheBlocks();
+            LevelGenerator.sharedInstance.GenerateInitialBlocks();
+        }
+
         PlayerController.sharedInstance.StartGame();
     }
 
@@ -62,16 +77,25 @@ public class GameManager : MonoBehaviour {
         if (newGameState == GameState.menu)
         {
             //Hay que preparar la escena de Unity para mostrar el menú
+            menuCanvas.enabled = true;
+            gameCanvas.enabled = false;
+            gameOverCanvas.enabled = false;
 
         }
         else if (newGameState == GameState.inGame)
         {
             //Hay que preparar la escena de Unity para jugar
+            menuCanvas.enabled = false;
+            gameCanvas.enabled = true;
+            gameOverCanvas.enabled = false;
 
         }
         else if (newGameState == GameState.gameOver)
         {
             //Hay que preparar la escena de Unity para el Game Over
+            menuCanvas.enabled = false;
+            gameCanvas.enabled = false;
+            gameOverCanvas.enabled = true;
 
         }
 
