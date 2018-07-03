@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4315237433023544}
   - component: {fileID: 212299381040213134}
   - component: {fileID: 61464944392482308}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: rock-vertical
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35,7 +35,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1121520782733826}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.83, y: 1.68, z: 0}
+  m_LocalPosition: {x: 12.107635, y: -16.074236, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour {
 	private void Update()
 	{
         if(Input.GetButtonDown("Start") && this.currentGameState != GameState.inGame){
-            StartGame();
+            StartGame();              
         }
 
         if(Input.GetButtonDown("Pause")){
