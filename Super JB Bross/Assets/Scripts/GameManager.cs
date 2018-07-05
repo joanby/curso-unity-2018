@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //Posibles estados del videojuego
-public enum GameState{
+public enum GameState
+{
     menu,
-    inGame, 
+    inGame,
     gameOver
 }
 
-public class GameManager : MonoBehaviour {
+public class GameManager : MonoBehaviour
+{
 
     //Variable que referencia al propio Game Manager
     public static GameManager sharedInstance;
@@ -21,29 +23,38 @@ public class GameManager : MonoBehaviour {
     public Canvas menuCanvas, gameCanvas, gameOverCanvas;
 
 
-	private void Awake()
-	{
+    private void Awake()
+    {
         sharedInstance = this;
-	}
+    }
 
-	private void Start()
-	{
+    private void Start()
+    {
         BackToMenu();
-	}
+    }
 
-	private void Update()
-	{
-        if(Input.GetButtonDown("Start") && this.currentGameState != GameState.inGame){
-            StartGame();              
+
+    private void Update()
+    {
+        if (Input.GetButtonDown("Start") && this.currentGameState != GameState.inGame)
+        {
+            StartGame();
         }
 
-        if(Input.GetButtonDown("Pause")){
+        if (Input.GetButtonDown("Pause"))
+        {
             BackToMenu();
         }
-	}
 
-	//Método encargado de iniciar el juego
-	public void StartGame(){
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ExitGame();
+        }
+    }
+
+    //Método encargado de iniciar el juego
+    public void StartGame()
+    {
         SetGameState(GameState.inGame);
 
 
@@ -61,13 +72,26 @@ public class GameManager : MonoBehaviour {
     }
 
     //Método que se llamará cuando el jugador muera
-    public void GameOver(){
+    public void GameOver()
+    {
         SetGameState(GameState.gameOver);
     }
 
     //Método para volver al menú principal cuando el usuario lo quiera hacer
-    public void BackToMenu(){
+    public void BackToMenu()
+    {
         SetGameState(GameState.menu);
+    }
+
+
+    //Método para finalizar la ejecución del videojuego
+    public void ExitGame()
+    {
+        #if UNITY_EDITOR
+             UnityEditor.EditorApplication.isPlaying = false;
+        #else
+             Application.Quit();
+        #endif
     }
 
    
