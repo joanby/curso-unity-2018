@@ -1,19 +1,20 @@
 ﻿<Properties StartupConfiguration="{793A1EE2-51C0-A465-BD4B-3644DFB1FA6D}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TriggerMovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Parallax.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="104" Column="18" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="52" Column="23" />
       <File FileName="Assets/Scripts/GameManager.cs" Line="137" Column="11" />
       <File FileName="Assets/Scripts/KillTrigger.cs" Line="14" Column="1" />
       <File FileName="Assets/Scripts/LevelBlock.cs" Line="8" Column="32" />
       <File FileName="Assets/Scripts/LevelGenerator.cs" Line="55" Column="11" />
       <File FileName="Assets/Scripts/CameraFollow.cs" Line="22" Column="38" />
       <File FileName="Assets/Scripts/LeaveZone.cs" Line="15" Column="10" />
-      <File FileName="Assets/Scripts/Collectable.cs" Line="50" Column="60" />
+      <File FileName="Assets/Scripts/Collectable.cs" Line="50" Column="48" />
       <File FileName="Assets/Scripts/ViewInGame.cs" Line="26" Column="48" />
       <File FileName="Assets/Scripts/PlayerBar.cs" Line="28" Column="23" />
-      <File FileName="Assets/Scripts/Enemy.cs" Line="23" Column="56" />
-      <File FileName="Assets/Scripts/TriggerMovement.cs" Line="7" Column="3" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="25" Column="49" />
+      <File FileName="Assets/Scripts/TriggerMovement.cs" Line="13" Column="20" />
+      <File FileName="Assets/Scripts/Parallax.cs" Line="7" Column="35" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

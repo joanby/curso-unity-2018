@@ -18,6 +18,10 @@ public class Collectable : MonoBehaviour {
 
     public int value = 0;
 
+
+    public AudioClip collectSound;
+
+
     //Método para activar la moneda y su collider
     void Show(){
         //activamos la imagen de la moneda -> de rebote también la animación
@@ -39,6 +43,12 @@ public class Collectable : MonoBehaviour {
         isCollected = true;
         Hide();
 
+        AudioSource audio = GetComponent<AudioSource>();
+
+        if (audio != null && this.collectSound !=null)
+        {
+            audio.PlayOneShot(this.collectSound);
+        }
         switch(this.type){
             case CollectableType.money:
                 GameManager.sharedInstance.CollectObject(value);
