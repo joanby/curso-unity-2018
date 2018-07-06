@@ -52,7 +52,7 @@ public class LevelGenerator : MonoBehaviour {
                                          spawnPosition.y-currentBlock.startPoint.position.y,
                                          0);
 
-        Debug.Log(correction);
+        //Debug.Log(correction);
 
         currentBlock.transform.position = correction;
         currentBlocks.Add(currentBlock);
@@ -61,11 +61,11 @@ public class LevelGenerator : MonoBehaviour {
 
     public void RemoveOldestLevelBlock()
     {
-        Debug.Log("Vamos a destruir un bloque. De momento hay "+currentBlocks.Count);
+        //Debug.Log("Vamos a destruir un bloque. De momento hay "+currentBlocks.Count);
         LevelBlock oldestBlock = currentBlocks[0];
         currentBlocks.Remove(oldestBlock);
         Destroy(oldestBlock.gameObject);
-        Debug.Log("Hemos destruido un bloque. Ahora quedan " + currentBlocks.Count);
+        //Debug.Log("Hemos destruido un bloque. Ahora quedan " + currentBlocks.Count);
     }
 
 

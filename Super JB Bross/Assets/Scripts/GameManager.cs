@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
 
     public Canvas menuCanvas, gameCanvas, gameOverCanvas;
 
+    public int collectedObjects = 0;
+
 
     private void Awake()
     {
@@ -69,6 +71,8 @@ public class GameManager : MonoBehaviour
         }
 
         PlayerController.sharedInstance.StartGame();
+
+        this.collectedObjects = 0;
     }
 
     //Método que se llamará cuando el jugador muera
@@ -126,5 +130,14 @@ public class GameManager : MonoBehaviour
         //Asignamos el estado de juego actual al que nos ha llegado por parámetro
         this.currentGameState = newGameState;
     }
+
+
+    public void CollectObject(int objectValue){
+        this.collectedObjects += objectValue;
+        //Debug.Log("Llevamos recogidos: "+this.collectedObjects);
+    }
+
+
+
 
 }
