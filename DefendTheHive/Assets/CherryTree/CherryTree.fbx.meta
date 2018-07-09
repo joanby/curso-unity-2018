@@ -1,0 +1,171 @@
+fileFormatVersion: 2
+guid: 09a7192f7b6e66b458b4076028e9fb70
+timeCreated: 1507720586
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bark
+    100002: Bark_MeshPart0
+    100004: Bark_MeshPart1
+    100006: Bark_MeshPart2
+    100008: Bark_MeshPart3
+    100010: Bark_MeshPart4
+    100012: Bark_MeshPart5
+    100014: Bark_MeshPart6
+    100016: //RootNode
+    100018: group3
+    100020: group3_MeshPart0
+    100022: group3_MeshPart1
+    100024: group3_MeshPart2
+    100026: group3_MeshPart3
+    100028: Leaves
+    100030: Leaves_MeshPart0
+    100032: Leaves_MeshPart1
+    100034: Leaves_MeshPart2
+    100036: Leaves_MeshPart3
+    100038: Leaves_MeshPart4
+    100040: Leaves_MeshPart5
+    400000: Bark
+    400002: Bark_MeshPart0
+    400004: Bark_MeshPart1
+    400006: Bark_MeshPart2
+    400008: Bark_MeshPart3
+    400010: Bark_MeshPart4
+    400012: Bark_MeshPart5
+    400014: Bark_MeshPart6
+    400016: //RootNode
+    400018: group3
+    400020: group3_MeshPart0
+    400022: group3_MeshPart1
+    400024: group3_MeshPart2
+    400026: group3_MeshPart3
+    400028: Leaves
+    400030: Leaves_MeshPart0
+    400032: Leaves_MeshPart1
+    400034: Leaves_MeshPart2
+    400036: Leaves_MeshPart3
+    400038: Leaves_MeshPart4
+    400040: Leaves_MeshPart5
+    2300000: Bark_MeshPart0
+    2300002: Bark_MeshPart1
+    2300004: Bark_MeshPart2
+    2300006: Bark_MeshPart3
+    2300008: Bark_MeshPart4
+    2300010: Bark_MeshPart5
+    2300012: Bark_MeshPart6
+    2300014: group3_MeshPart0
+    2300016: group3_MeshPart1
+    2300018: group3_MeshPart2
+    2300020: group3_MeshPart3
+    2300022: Leaves_MeshPart0
+    2300024: Leaves_MeshPart1
+    2300026: Leaves_MeshPart2
+    2300028: Leaves_MeshPart3
+    2300030: Leaves_MeshPart4
+    2300032: Leaves_MeshPart5
+    3300000: Bark_MeshPart0
+    3300002: Bark_MeshPart1
+    3300004: Bark_MeshPart2
+    3300006: Bark_MeshPart3
+    3300008: Bark_MeshPart4
+    3300010: Bark_MeshPart5
+    3300012: Bark_MeshPart6
+    3300014: group3_MeshPart0
+    3300016: group3_MeshPart1
+    3300018: group3_MeshPart2
+    3300020: group3_MeshPart3
+    3300022: Leaves_MeshPart0
+    3300024: Leaves_MeshPart1
+    3300026: Leaves_MeshPart2
+    3300028: Leaves_MeshPart3
+    3300030: Leaves_MeshPart4
+    3300032: Leaves_MeshPart5
+    4300000: Bark_MeshPart0
+    4300002: Bark_MeshPart1
+    4300004: Bark_MeshPart2
+    4300006: Bark_MeshPart3
+    4300008: Bark_MeshPart4
+    4300010: Bark_MeshPart5
+    4300012: Bark_MeshPart6
+    4300014: Leaves_MeshPart0
+    4300016: Leaves_MeshPart1
+    4300018: Leaves_MeshPart2
+    4300020: Leaves_MeshPart3
+    4300022: Leaves_MeshPart4
+    4300024: Leaves_MeshPart5
+    4300026: group3_MeshPart0
+    4300028: group3_MeshPart1
+    4300030: group3_MeshPart2
+    4300032: group3_MeshPart3
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.05
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

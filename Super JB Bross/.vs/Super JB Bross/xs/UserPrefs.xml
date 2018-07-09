@@ -14,7 +14,7 @@
       <File FileName="Assets/Scripts/PlayerBar.cs" Line="28" Column="23" />
       <File FileName="Assets/Scripts/Enemy.cs" Line="25" Column="49" />
       <File FileName="Assets/Scripts/TriggerMovement.cs" Line="13" Column="20" />
-      <File FileName="Assets/Scripts/Parallax.cs" Line="7" Column="35" />
+      <File FileName="Assets/Scripts/Parallax.cs" Line="24" Column="65" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
