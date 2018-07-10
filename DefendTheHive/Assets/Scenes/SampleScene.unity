@@ -1517,6 +1517,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 325.77444
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 780611a67e8e941a2b3aa96e5915a793, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 780611a67e8e941a2b3aa96e5915a793, type: 2}
   m_IsPrefabParent: 0
@@ -1944,8 +1948,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   followTarget: {fileID: 1545524760}
-  movementSmoothness: 1
-  rotationSmoothness: 1
+  movementSmoothness: 5
+  rotationSmoothness: 5
   canFollow: 1
 --- !u!1 &892470403
 GameObject:
@@ -2973,7 +2977,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1629623706
 Transform:
   m_ObjectHideFlags: 0
@@ -3437,7 +3441,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1837392422
 Transform:
   m_ObjectHideFlags: 0
@@ -3808,6 +3812,7 @@ GameObject:
   - component: {fileID: 2110416498}
   - component: {fileID: 2110416497}
   - component: {fileID: 2110416495}
+  - component: {fileID: 2110416496}
   m_Layer: 0
   m_Name: CucumberMan
   m_TagString: Untagged
@@ -3826,12 +3831,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5227f18b5dac402eb464cdcec24c150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 10
-  moveSpeed: 5
-  runSpeed: 10
+  jumpForce: 100
+  moveSpeed: 30
+  runSpeed: 15
   stationaryTurnAround: 180
   movingTurnSpeed: 360
-  m_camera: {fileID: 889196234}
+  m_camera: {fileID: 0}
+  groundCheckDistance: 0.1
+  moveSpeedMultiplier: 1
+--- !u!114 &2110416496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114974474641682714, guid: de245888609cc8249b2e3cc682626634,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110416494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8528b44c2231d45f88c34592006e7302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idleState: idle
+  walkState: walk
+  runState: run
+  jumpState: jump
+  throwState: throw
+  dieState: die
 --- !u!136 &2110416497
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3872,7 +3897,7 @@ Animator:
   m_GameObject: {fileID: 2110416494}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: dfd8b30a1355317418b45c238bd7504d, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b864fcda0e0944bb9aeb50f8ddf59c97, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3889,7 +3914,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110416494}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 255.9425, y: 25.001526, z: 146.83017}
+  m_LocalPosition: {x: 285, y: 25.001526, z: 275}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 917074288}
