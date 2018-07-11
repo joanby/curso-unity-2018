@@ -1,0 +1,386 @@
+fileFormatVersion: 2
+guid: b6ee1822726d90d4c90c8b4ade01904a
+timeCreated: 1507052821
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Back
+    100002: Back_01
+    100004: Beetle
+    100006: Chest
+    100008: feeler_l
+    100010: feeler_r
+    100012: Head
+    100014: //RootNode
+    100016: joint16
+    100018: joint17
+    100020: joint18
+    100022: joint19
+    100024: joint2
+    100026: joint20
+    100028: joint21
+    100030: joint23
+    100032: joint24
+    100034: joint25
+    100036: joint26
+    100038: joint27
+    100040: joint28
+    100042: joint3
+    100044: joint30
+    100046: joint31
+    100048: joint32
+    100050: joint33
+    100052: joint34
+    100054: joint35
+    100056: joint36
+    100058: joint4
+    100060: joint40
+    100062: joint41
+    100064: joint42
+    100066: joint43
+    100068: joint44
+    100070: joint45
+    100072: joint47
+    100074: joint48
+    100076: joint49
+    100078: joint5
+    100080: joint50
+    100082: joint51
+    100084: joint52
+    100086: joint54
+    100088: joint55
+    100090: joint56
+    100092: joint57
+    100094: joint58
+    100096: joint59
+    100098: joint6
+    100100: joint60
+    100102: joint62
+    100104: joint63
+    100106: joint64
+    100108: joint65
+    100110: joint66
+    100112: joint67
+    100114: joint7
+    100116: Leg01_l
+    100118: leg01_r
+    100120: leg02_l
+    100122: leg02_r
+    100124: Leg03_l
+    100126: leg03_r
+    100128: Main
+    100130: Neck
+    100132: Pelvis
+    100134: wing_l
+    100136: wing_r
+    400000: Back
+    400002: Back_01
+    400004: Beetle
+    400006: Chest
+    400008: feeler_l
+    400010: feeler_r
+    400012: Head
+    400014: //RootNode
+    400016: joint16
+    400018: joint17
+    400020: joint18
+    400022: joint19
+    400024: joint2
+    400026: joint20
+    400028: joint21
+    400030: joint23
+    400032: joint24
+    400034: joint25
+    400036: joint26
+    400038: joint27
+    400040: joint28
+    400042: joint3
+    400044: joint30
+    400046: joint31
+    400048: joint32
+    400050: joint33
+    400052: joint34
+    400054: joint35
+    400056: joint36
+    400058: joint4
+    400060: joint40
+    400062: joint41
+    400064: joint42
+    400066: joint43
+    400068: joint44
+    400070: joint45
+    400072: joint47
+    400074: joint48
+    400076: joint49
+    400078: joint5
+    400080: joint50
+    400082: joint51
+    400084: joint52
+    400086: joint54
+    400088: joint55
+    400090: joint56
+    400092: joint57
+    400094: joint58
+    400096: joint59
+    400098: joint6
+    400100: joint60
+    400102: joint62
+    400104: joint63
+    400106: joint64
+    400108: joint65
+    400110: joint66
+    400112: joint67
+    400114: joint7
+    400116: Leg01_l
+    400118: leg01_r
+    400120: leg02_l
+    400122: leg02_r
+    400124: Leg03_l
+    400126: leg03_r
+    400128: Main
+    400130: Neck
+    400132: Pelvis
+    400134: wing_l
+    400136: wing_r
+    4300000: Beetle
+    7400000: Idle_OnGround
+    9500000: //RootNode
+    13700000: Beetle
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle_OnGround
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Beetle
+        weight: 1
+      - path: Main
+        weight: 1
+      - path: Main/Pelvis
+        weight: 1
+      - path: Main/Pelvis/Back
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/leg02_l
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/leg02_l/joint23
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/leg02_l/joint23/joint24
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/leg02_l/joint23/joint24/joint25
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/leg02_l/joint23/joint24/joint25/joint26
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/leg02_l/joint23/joint24/joint25/joint26/joint27
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/leg02_l/joint23/joint24/joint25/joint26/joint27/joint28
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/leg02_r
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/leg02_r/joint47
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/leg02_r/joint47/joint48
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/leg02_r/joint47/joint48/joint49
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/leg02_r/joint47/joint48/joint49/joint50
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/leg02_r/joint47/joint48/joint49/joint50/joint51
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/leg02_r/joint47/joint48/joint49/joint50/joint51/joint52
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/Leg03_l
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/Leg03_l/joint30
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/Leg03_l/joint30/joint31
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/Leg03_l/joint30/joint31/joint32
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/Leg03_l/joint30/joint31/joint32/joint33
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/Leg03_l/joint30/joint31/joint32/joint33/joint34
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/Leg03_l/joint30/joint31/joint32/joint33/joint34/joint35
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/Leg03_l/joint30/joint31/joint32/joint33/joint34/joint35/joint36
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/leg03_r
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/leg03_r/joint54
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/leg03_r/joint54/joint55
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/leg03_r/joint54/joint55/joint56
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/leg03_r/joint54/joint55/joint56/joint57
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/leg03_r/joint54/joint55/joint56/joint57/joint58
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/leg03_r/joint54/joint55/joint56/joint57/joint58/joint59
+        weight: 1
+      - path: Main/Pelvis/Back/Back_01/leg03_r/joint54/joint55/joint56/joint57/joint58/joint59/joint60
+        weight: 1
+      - path: Main/Pelvis/Back/wing_l
+        weight: 1
+      - path: Main/Pelvis/Back/wing_r
+        weight: 1
+      - path: Main/Pelvis/Chest
+        weight: 1
+      - path: Main/Pelvis/Chest/Leg01_l
+        weight: 1
+      - path: Main/Pelvis/Chest/Leg01_l/joint16
+        weight: 1
+      - path: Main/Pelvis/Chest/Leg01_l/joint16/joint17
+        weight: 1
+      - path: Main/Pelvis/Chest/Leg01_l/joint16/joint17/joint18
+        weight: 1
+      - path: Main/Pelvis/Chest/Leg01_l/joint16/joint17/joint18/joint19
+        weight: 1
+      - path: Main/Pelvis/Chest/Leg01_l/joint16/joint17/joint18/joint19/joint20
+        weight: 1
+      - path: Main/Pelvis/Chest/Leg01_l/joint16/joint17/joint18/joint19/joint20/joint21
+        weight: 1
+      - path: Main/Pelvis/Chest/leg01_r
+        weight: 1
+      - path: Main/Pelvis/Chest/leg01_r/joint40
+        weight: 1
+      - path: Main/Pelvis/Chest/leg01_r/joint40/joint41
+        weight: 1
+      - path: Main/Pelvis/Chest/leg01_r/joint40/joint41/joint42
+        weight: 1
+      - path: Main/Pelvis/Chest/leg01_r/joint40/joint41/joint42/joint43
+        weight: 1
+      - path: Main/Pelvis/Chest/leg01_r/joint40/joint41/joint42/joint43/joint44
+        weight: 1
+      - path: Main/Pelvis/Chest/leg01_r/joint40/joint41/joint42/joint43/joint44/joint45
+        weight: 1
+      - path: Main/Pelvis/Chest/Neck
+        weight: 1
+      - path: Main/Pelvis/Chest/Neck/Head
+        weight: 1
+      - path: Main/Pelvis/Chest/Neck/Head/feeler_l
+        weight: 1
+      - path: Main/Pelvis/Chest/Neck/Head/feeler_l/joint2
+        weight: 1
+      - path: Main/Pelvis/Chest/Neck/Head/feeler_l/joint2/joint3
+        weight: 1
+      - path: Main/Pelvis/Chest/Neck/Head/feeler_l/joint2/joint3/joint4
+        weight: 1
+      - path: Main/Pelvis/Chest/Neck/Head/feeler_l/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: Main/Pelvis/Chest/Neck/Head/feeler_l/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: Main/Pelvis/Chest/Neck/Head/feeler_l/joint2/joint3/joint4/joint5/joint6/joint7
+        weight: 1
+      - path: Main/Pelvis/Chest/Neck/Head/feeler_r
+        weight: 1
+      - path: Main/Pelvis/Chest/Neck/Head/feeler_r/joint62
+        weight: 1
+      - path: Main/Pelvis/Chest/Neck/Head/feeler_r/joint62/joint63
+        weight: 1
+      - path: Main/Pelvis/Chest/Neck/Head/feeler_r/joint62/joint63/joint64
+        weight: 1
+      - path: Main/Pelvis/Chest/Neck/Head/feeler_r/joint62/joint63/joint64/joint65
+        weight: 1
+      - path: Main/Pelvis/Chest/Neck/Head/feeler_r/joint62/joint63/joint64/joint65/joint66
+        weight: 1
+      - path: Main/Pelvis/Chest/Neck/Head/feeler_r/joint62/joint63/joint64/joint65/joint66/joint67
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.15
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 00fb6b4df115f6f48a20b74d48dc212e,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

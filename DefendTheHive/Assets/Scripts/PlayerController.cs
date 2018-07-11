@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour {
     bool isWalking, isRunning, isJumping, isIdle, isDead, forward, backward, left, right;
     Animator m_Animator;
 
+    public AudioClip jumpClip, throwClip;
+
 	// Use this for initialization
 	void Start () {
         m_Animator = GetComponent<Animator>();
@@ -158,13 +160,20 @@ public class PlayerController : MonoBehaviour {
     }
 
     IEnumerator ConsumeJump(){
+        
         yield return new WaitForSeconds(0.66f);
+
+        AudioSource audioSource = GetComponent<AudioSource>();
+        audioSource.PlayOneShot(jumpClip);
         m_Animator.SetBool(jumpState, false);
         ReturnToMoveState();
     }
 
     IEnumerator ConsumeThrow(){
+       
         yield return new WaitForSeconds(0.66f);
+        AudioSource audioSource = GetComponent<AudioSource>();
+        audioSource.PlayOneShot(throwClip);
         m_Animator.SetBool(throwState, false);
         ReturnToMoveState();
     }

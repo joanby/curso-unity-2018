@@ -713,11 +713,11 @@ GameObject:
   - component: {fileID: 95327176523422168}
   - component: {fileID: 54536512502153852}
   - component: {fileID: 136447930440056040}
+  - component: {fileID: 114487872674806902}
   - component: {fileID: 114974474641682714}
-  - component: {fileID: 114570141411612486}
   m_Layer: 0
   m_Name: CucumberMan
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1373,7 +1373,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1827740803539562}
   m_LocalRotation: {x: 0.08801508, y: -0, z: -0, w: 0.99611914}
-  m_LocalPosition: {x: 0, y: 10.25, z: -13.99}
+  m_LocalPosition: {x: 0, y: 10.96, z: -17.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4931382901150816}
@@ -1386,8 +1386,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1992261083327458}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 255.9425, y: 25.001526, z: 146.83017}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 135.92, y: 14.34, z: 105.92}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
   - {fileID: 4222173351705798}
   - {fileID: 4678462152270072}
@@ -1420,9 +1420,9 @@ Rigidbody:
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 1
+  m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!95 &95327176523422168
 Animator:
   serializedVersion: 3
@@ -1441,7 +1441,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114570141411612486
+--- !u!114 &114487872674806902
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1452,14 +1452,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5227f18b5dac402eb464cdcec24c150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 10
+  jumpForce: 6
   moveSpeed: 5
   runSpeed: 10
-  stationaryTurnAround: 180
-  movingTurnSpeed: 360
-  m_camera: {fileID: 0}
-  groundCheckDistance: 0.1
-  moveSpeedMultiplier: 1
+  m_MovingTurnSpeed: 360
+  m_StationaryTurnSpeed: 180
+  m_JumpPower: 12
+  m_GravityMultiplier: 9.9
+  m_Cam: {fileID: 0}
+  m_GroundCheckDistance: 0.1
+  m_MoveSpeedMultiplier: 1
+  m_AnimSpeedMultiplier: 1
 --- !u!114 &114974474641682714
 MonoBehaviour:
   m_ObjectHideFlags: 1
