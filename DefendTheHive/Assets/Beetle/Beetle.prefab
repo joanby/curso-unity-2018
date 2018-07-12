@@ -353,9 +353,11 @@ GameObject:
   - component: {fileID: 95347404935874026}
   - component: {fileID: 65666838766653818}
   - component: {fileID: 114316316722822868}
+  - component: {fileID: 114625186445558360}
+  - component: {fileID: 143556794494424688}
   m_Layer: 0
   m_Name: Beetle
-  m_TagString: Untagged
+  m_TagString: Beetle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1154,7 +1156,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1414967246325388}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 131.5919, y: 14.002319, z: 111.07353}
+  m_LocalPosition: {x: 127.24, y: 14.002319, z: 111.07353}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4552222928803544}
@@ -1391,14 +1393,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1069165264555674}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4075578689238826}
   m_Father: {fileID: 4133877150123340}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!4 &4330137427500246
 Transform:
   m_ObjectHideFlags: 1
@@ -1603,13 +1605,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1085522802812356}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4133877150123340}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &4574747707517668
 Transform:
   m_ObjectHideFlags: 1
@@ -2025,8 +2027,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.6076813, y: 0.6562853, z: 1.7757721}
-  m_Center: {x: -0.44219208, y: 0.74282694, z: -0.061317444}
+  m_Size: {x: 1.7677383, y: 0.6562853, z: 4.6703415}
+  m_Center: {x: -0.0052604675, y: 0.74282694, z: -0.5801506}
 --- !u!95 &95347404935874026
 Animator:
   serializedVersion: 3
@@ -2056,6 +2058,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c082a0ad94e54b5083f91326879bf91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextCucumberToDestroy: {fileID: 0}
+  cherryHit: 0
+  hasReachedThePlayer: 0
+  smoothTime: 3
+  smoothVelocity: {x: 0, y: 0, z: 0}
+--- !u!114 &114625186445558360
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1414967246325388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 274c2a8ac33ca4413b53f85e4cd7170f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  directionChangeInterval: 1
+  maxHeadingChange: 30
 --- !u!137 &137759688870218282
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -2169,3 +2190,20 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.37711, y: -0.19061008, z: 0.00000029802322}
     m_Extent: {x: 2.925384, y: 0.5478959, z: 1.8801703}
   m_DirtyAABB: 0
+--- !u!143 &143556794494424688
+CharacterController:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1414967246325388}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}

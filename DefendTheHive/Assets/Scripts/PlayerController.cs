@@ -165,6 +165,7 @@ public class PlayerController : MonoBehaviour {
 
         AudioSource audioSource = GetComponent<AudioSource>();
         audioSource.PlayOneShot(jumpClip);
+
         m_Animator.SetBool(jumpState, false);
         ReturnToMoveState();
     }
@@ -172,8 +173,10 @@ public class PlayerController : MonoBehaviour {
     IEnumerator ConsumeThrow(){
        
         yield return new WaitForSeconds(0.66f);
+
         AudioSource audioSource = GetComponent<AudioSource>();
         audioSource.PlayOneShot(throwClip);
+
         m_Animator.SetBool(throwState, false);
         ReturnToMoveState();
     }

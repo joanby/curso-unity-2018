@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - CherryTree
+  - Cucumber
+  - Cherry
+  - Beetle
   layers:
   - Default
   - TransparentFX

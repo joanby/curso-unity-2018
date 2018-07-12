@@ -62,7 +62,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BeatleNPC.cs" />
+    <Compile Include="Assets\Scripts\BeetleManager.cs" />
+    <Compile Include="Assets\Scripts\BeetlePatrol.cs" />
     <Compile Include="Assets\Scripts\CameraFollower.cs" />
+    <Compile Include="Assets\Scripts\CucumberManager.cs" />
     <Compile Include="Assets\Scripts\NewPlayerMotor.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerMotor.cs" />

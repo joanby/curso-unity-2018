@@ -1,13 +1,15 @@
 ﻿<Properties StartupConfiguration="{00B9379D-BCB8-5EFE-11FC-0A2F36700E88}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/NewPlayerMotor.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BeetleManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerMotor.cs" Line="72" Column="10" />
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="173" Column="8" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="164" Column="46" />
       <File FileName="Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonUserControl.cs" Line="44" Column="9" />
       <File FileName="Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonCharacter.cs" Line="224" Column="3" />
-      <File FileName="Assets/Scripts/BeatleNPC.cs" Line="16" Column="23" />
-      <File FileName="Assets/Scripts/NewPlayerMotor.cs" Line="78" Column="40" />
+      <File FileName="Assets/Scripts/BeatleNPC.cs" Line="92" Column="43" />
+      <File FileName="Assets/Scripts/NewPlayerMotor.cs" Line="163" Column="44" />
+      <File FileName="Assets/Scripts/BeetlePatrol.cs" Line="53" Column="1" />
+      <File FileName="Assets/Scripts/CucumberManager.cs" Line="24" Column="3" />
+      <File FileName="Assets/Scripts/BeetleManager.cs" Line="9" Column="34" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
