@@ -13,15 +13,28 @@ public class BeatleNPC : MonoBehaviour {
     public float smoothTime = 3.0f;
     public Vector3 smoothVelocity = Vector3.zero;
 
+    public HealthManager healthManager;
+
+
+    private static BeetleManager manager;
 	// Use this for initialization
 	void Start () {
         m_Animator = GetComponent<Animator>();
+        healthManager = GameObject.Find("Health Slider").GetComponent<HealthManager>();
+        if (manager == null)
+        {
+            manager = GameObject.Find("Beetles Value").GetComponent<BeetleManager>();
+        }
+        manager.RecalculateBeetles();
 	}
 
 	private void OnCollisionEnter(Collision collision)
 	{
         if(collision.gameObject.CompareTag("Player")){
             hasReachedThePlayer = true;
+
+            healthManager.ReduceHealth();
+           
 
             if(!cherryHit){
                 BeetlePatrol.isAttacking = true;
@@ -54,7 +67,8 @@ public class BeatleNPC : MonoBehaviour {
         }
 
         if(other.gameObject.CompareTag("Cherry")){
-            Debug.Log("Ha chocado con la cereza");
+
+            PointsManager.AddPoints(25);
 
             BeetlePatrol.isAttacking = true;
             cherryHit = true;
@@ -74,6 +88,8 @@ public class BeatleNPC : MonoBehaviour {
         m_Animator.Play("Die_OnGround");
         Destroy(this.gameObject, 2.0f);
         hasReachedThePlayer = false;
+        manager.RecalculateBeetles();
+
     }
 
     IEnumerator DestroyBeetleStanding(){
@@ -82,6 +98,8 @@ public class BeatleNPC : MonoBehaviour {
         Destroy(this.gameObject, 2.0f);
         cherryHit = false;
         hasReachedThePlayer = false;
+        manager.RecalculateBeetles();
+
     }
 
 

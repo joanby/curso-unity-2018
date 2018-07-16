@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
     public string idleState, walkState, runState, jumpState, throwState, dieState;
-    bool isWalking, isRunning, isJumping, isIdle, isDead, forward, backward, left, right;
+    bool isWalking, isRunning, isJumping, isIdle, forward, backward, left, right;
     Animator m_Animator;
 
     public AudioClip jumpClip, throwClip;
@@ -130,6 +130,11 @@ public class PlayerController : MonoBehaviour {
                 m_Animator.SetBool(walkState, true);
                 m_Animator.SetBool(runState, false);
             }
+        }
+
+        //Comprobamos si nos hemos quedado sin vidas para hacer la animación de la muerte
+        if(PlayerManager.livesRemaining == 0){
+            m_Animator.Play("CM_Die");
         }
 	}
 

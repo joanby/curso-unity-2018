@@ -6,14 +6,14 @@ using UnityEngine.UI;
 public class CucumberManager : MonoBehaviour {
 
     private string m_Tag = "Cucumber";
-    public int currentCucumberCount = 0;
+    public static int currentCucumberCount = 0;
     Text cucumberTextCount;
     public GameObject[] cucumbers;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
         cucumberTextCount = GetComponent<Text>();
-        currentCucumberCount = 0;
+        currentCucumberCount = 1;
 	}
 	
 	// Update is called once per frame
