@@ -61,9 +61,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Fruit.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\GhostMovement.cs" />
     <Compile Include="Assets\Scripts\PacDot.cs" />
     <Compile Include="Assets\Scripts\PacmanMovement.cs" />
+    <Compile Include="Assets\Scripts\UIManager.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/JuanGabriel/Developer/Unity Projects/curso-unity-2018/Pocman/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

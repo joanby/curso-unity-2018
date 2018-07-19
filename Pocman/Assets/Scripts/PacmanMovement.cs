@@ -13,42 +13,52 @@ public class PacmanMovement : MonoBehaviour {
 	}
 	
 	void FixedUpdate () {
-        //Calculamos el nuevo punto donde hay que ir en base a la variable destino
-        Vector2 newPos = Vector2.MoveTowards(this.transform.position, destination, speed*Time.deltaTime);
-        //Usamos el rigidbody para transportar a Pacman hasta dicha posición
-        GetComponent<Rigidbody2D>().MovePosition(newPos);
+
+        if (GameManager.sharedInstance.gameStarted && !GameManager.sharedInstance.gamePaused)
+        {
+            GetComponent<AudioSource>().volume = 0.5f;
 
 
-        float distanceToDestination = Vector2.Distance((Vector2)this.transform.position, destination);
-        Debug.Log(distanceToDestination);
+            //Calculamos el nuevo punto donde hay que ir en base a la variable destino
+            Vector2 newPos = Vector2.MoveTowards(this.transform.position, destination, speed * Time.deltaTime);
+            //Usamos el rigidbody para transportar a Pacman hasta dicha posición
+            GetComponent<Rigidbody2D>().MovePosition(newPos);
 
-        if(distanceToDestination < 2.0f){
-            
-            if(Input.GetKey(KeyCode.UpArrow) && CanMoveTo(Vector2.up))
+
+            float distanceToDestination = Vector2.Distance((Vector2)this.transform.position, destination);
+            Debug.Log(distanceToDestination);
+
+            if (distanceToDestination < 2.0f)
             {
-                destination = (Vector2)this.transform.position + Vector2.up;
+
+                if (Input.GetKey(KeyCode.UpArrow) && CanMoveTo(Vector2.up))
+                {
+                    destination = (Vector2)this.transform.position + Vector2.up;
+                }
+
+                if (Input.GetKey(KeyCode.RightArrow) && CanMoveTo(Vector2.right))
+                {
+                    destination = (Vector2)this.transform.position + Vector2.right;
+                }
+
+                if (Input.GetKey(KeyCode.DownArrow) && CanMoveTo(Vector2.down))
+                {
+                    destination = (Vector2)this.transform.position + Vector2.down;
+                }
+
+                if (Input.GetKey(KeyCode.LeftArrow) && CanMoveTo(Vector2.left))
+                {
+                    destination = (Vector2)this.transform.position + Vector2.left;
+                }
             }
 
-            if(Input.GetKey(KeyCode.RightArrow) && CanMoveTo(Vector2.right))
-            {
-                destination = (Vector2)this.transform.position + Vector2.right;
-            }
 
-            if(Input.GetKey(KeyCode.DownArrow) && CanMoveTo(Vector2.down))
-            {
-                destination = (Vector2)this.transform.position + Vector2.down;
-            }
-
-            if(Input.GetKey(KeyCode.LeftArrow) && CanMoveTo(Vector2.left))
-            {
-                destination = (Vector2)this.transform.position + Vector2.left;
-            }
+            Vector2 dir = destination - (Vector2)this.transform.position;
+            GetComponent<Animator>().SetFloat("DirX", dir.x);
+            GetComponent<Animator>().SetFloat("DirY", dir.y);
+        } else{
+            GetComponent<AudioSource>().volume = 0.0f;
         }
-
-
-        Vector2 dir = destination - (Vector2)this.transform.position;
-        GetComponent<Animator>().SetFloat("DirX", dir.x);
-        GetComponent<Animator>().SetFloat("DirY", dir.y);
 	}
 
     //Método que dada una posible dirección de movimiento

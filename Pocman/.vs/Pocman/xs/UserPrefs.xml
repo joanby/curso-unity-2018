@@ -1,10 +1,13 @@
 ﻿<Properties StartupConfiguration="{EFEED0EB-722C-8699-094D-69C0D90D02AB}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GhostMovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/PacmanMovement.cs" Line="19" Column="56" />
-      <File FileName="Assets/Scripts/PacDot.cs" Line="12" Column="3" />
-      <File FileName="Assets/Scripts/GhostMovement.cs" Line="7" Column="6" />
+      <File FileName="Assets/Scripts/PacmanMovement.cs" Line="13" Column="1" />
+      <File FileName="Assets/Scripts/PacDot.cs" Line="10" Column="55" />
+      <File FileName="Assets/Scripts/GhostMovement.cs" Line="83" Column="50" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="14" Column="32" />
+      <File FileName="Assets/Scripts/UIManager.cs" Line="36" Column="50" />
+      <File FileName="Assets/Scripts/Fruit.cs" Line="12" Column="50" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
