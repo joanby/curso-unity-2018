@@ -6,16 +6,18 @@ public class GridHelper : MonoBehaviour {
 
 
     /*
-       | 0 | 1 | 2 | 3 |   
-    ___ ___ ___ ___ ___ 
-     0 |     n   n
-     1 | n   n
-     2 |
-     3 |
-
+  
+        ESTRUCTURA DE DATOS
+        
+     3  | n               
+     2  | x  null null null           
+     1  | x   n   null null       
+     0  | x   x   null
+     ___|___ ___ ___ ___ 
+        | 0 | 1 | 2 | 3 |   
     */
 
-    public static int width = 10, height = 20;
+    public static int width = 10, height = 20+4;
     public static Transform[,] grid = new Transform[width, height];
 
     public static Vector2 RoundVector(Vector2 v){
@@ -51,7 +53,7 @@ public class GridHelper : MonoBehaviour {
 
 
     public static void DecreaseRowsAbove(int y){
-        for (int i = y; i < height; y++){
+        for (int i = y; i < height; i++){
             DecreaseRow(i);
         }
     }
@@ -74,8 +76,20 @@ public class GridHelper : MonoBehaviour {
                 y--;
             }
         }
+
+        CleanPieces();
     }
 
+
+    private static void CleanPieces(){
+        foreach (GameObject piece in GameObject.FindGameObjectsWithTag("Piece"))
+        {
+            if (piece.transform.childCount == 0)
+            {
+                Destroy(piece);
+            }
+        } 
+    }
 
 
 

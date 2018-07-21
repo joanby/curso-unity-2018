@@ -1,9 +1,11 @@
 ﻿<Properties StartupConfiguration="{D2BFFF02-D087-DB1A-C7FE-6538A965A290}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GridHelper.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AdsManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/PieceSpawner.cs" Line="7" Column="37" />
-      <File FileName="Assets/Scripts/GridHelper.cs" Line="34" Column="40" />
+      <File FileName="Assets/Scripts/PieceSpawner.cs" Line="38" Column="53" />
+      <File FileName="Assets/Scripts/GridHelper.cs" Line="89" Column="24" />
+      <File FileName="Assets/Scripts/Piece.cs" Line="18" Column="34" />
+      <File FileName="Assets/Scripts/AdsManager.cs" Line="60" Column="52" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
