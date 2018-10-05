@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{59972000-A102-93F3-E252-4AFE00D882C8}|">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GoalZone.cs">
+    <Files>
+      <File FileName="Assets/Scripts/VerticalMovement.cs" Line="22" Column="10" />
+      <File FileName="Assets/Scripts/Ball.cs" Line="17" Column="72" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="24" Column="42" />
+      <File FileName="Assets/Scripts/GoalZone.cs" Line="12" Column="48" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
