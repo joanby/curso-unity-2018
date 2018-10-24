@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{59972000-A102-93F3-E252-4AFE00D882C8}|">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GridHelper.cs">
+    <Files>
+      <File FileName="Assets/Scripts/VerticalMovement.cs" Line="21" Column="49" />
+      <File FileName="Assets/Scripts/Ball.cs" Line="47" Column="64" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="46" Column="26" />
+      <File FileName="Assets/Scripts/GoalZone.cs" Line="34" Column="39" />
+      <File FileName="Assets/Scripts/HorizontalMovement.cs" Line="17" Column="2" />
+      <File FileName="Assets/Scripts/BallArkanoid.cs" Line="65" Column="10" />
+      <File FileName="Assets/Scripts/Block.cs" Line="17" Column="10" />
+      <File FileName="Assets/Scripts/MainMenuManager.cs" Line="13" Column="5" />
+      <File FileName="Assets/Scripts/KillZone.cs" Line="11" Column="48" />
+      <File FileName="Assets/Scripts/ArkanoidUI.cs" Line="7" Column="42" />
+      <File FileName="Assets/Scripts/Cell.cs" Line="49" Column="47" />
+      <File FileName="Assets/Scripts/GridHelper.cs" Line="34" Column="38" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
