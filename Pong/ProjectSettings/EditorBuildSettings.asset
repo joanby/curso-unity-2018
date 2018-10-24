@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Main Menu.unity
+    guid: bda8199700e13400b99a30e7c2825019
+  - enabled: 1
+    path: Assets/Scenes/PongScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/ArkanoidScene.unity
+    guid: e5fc29c9376c44c99813e1de59430407
   m_configObjects: {}

@@ -18,6 +18,17 @@ public class Ball : MonoBehaviour {
             GetComponent<Rigidbody2D>().velocity = Vector2.right * speed;
             hasTheBallMoved = true;
         }
+
+        if (GameManager.sharedInstance.gameStarted)
+        {
+            //TERNARIO
+            //(condicion ? valor si verdad : valor si falso)
+            string racketName = (GetComponent<Rigidbody2D>().velocity.x > 0 ? "Racket Left" : "Racket Right");
+            GameObject racket = GameObject.Find(racketName);
+            GetComponent<SpriteRenderer>().color = racket.GetComponent<SpriteRenderer>().color;
+
+        }
+
 	}
 
 	/*

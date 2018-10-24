@@ -61,9 +61,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\ArkanoidUI.cs" />
     <Compile Include="Assets\Scripts\Ball.cs" />
+    <Compile Include="Assets\Scripts\BallArkanoid.cs" />
+    <Compile Include="Assets\Scripts\Block.cs" />
+    <Compile Include="Assets\Scripts\Cell.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\GoalZone.cs" />
+    <Compile Include="Assets\Scripts\GridHelper.cs" />
+    <Compile Include="Assets\Scripts\HorizontalMovement.cs" />
+    <Compile Include="Assets\Scripts\KillZone.cs" />
+    <Compile Include="Assets\Scripts\MainMenuManager.cs" />
     <Compile Include="Assets\Scripts\VerticalMovement.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/JuanGabriel/Developer/Unity Projects/curso-unity-2018/Pong/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
