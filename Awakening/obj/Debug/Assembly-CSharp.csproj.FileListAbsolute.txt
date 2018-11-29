@@ -1,0 +1,2 @@
+/Users/JuanGabriel/Developer/Unity Projects/curso-unity-2018/Awakening/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
+/Users/JuanGabriel/Developer/Unity Projects/curso-unity-2018/Awakening/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache

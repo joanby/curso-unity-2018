@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{27DC62DF-A7AC-6527-1042-0E92E610F0A3}|">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Lobby/Scripts/EnemySpawner.cs">
+    <Files>
+      <File FileName="Assets/Scripts/BaseItem.cs" Line="21" Column="5" />
+      <File FileName="Assets/Scripts/InventoryItem.cs" Line="46" Column="1" />
+      <File FileName="Assets/Scripts/InventorySystem.cs" Line="43" Column="73" />
+      <File FileName="Assets/Scripts/GameMaster.cs" Line="64" Column="1" />
+      <File FileName="Assets/Scripts/InventoryItemAgent.cs" Line="16" Column="22" />
+      <File FileName="Assets/Scripts/MenuManager.cs" Line="18" Column="69" />
+      <File FileName="Assets/Scripts/BarbarianCharacterController.cs" Line="125" Column="44" />
+      <File FileName="Assets/Scripts/InventoryItemUI.cs" Line="11" Column="2" />
+      <File FileName="Assets/Scripts/InventoryUIManager.cs" Line="80" Column="14" />
+      <File FileName="Assets/Scripts/PlayerCharacter.cs" Line="6" Column="45" />
+      <File FileName="Assets/Scripts/BaseCharacter.cs" Line="18" Column="59" />
+      <File FileName="Assets/Scripts/PanelWeaponsItemUI.cs" Line="11" Column="25" />
+      <File FileName="Assets/Scripts/ActiveSpecailItemUI.cs" Line="10" Column="5" />
+      <File FileName="Assets/Scripts/HUDElementUI.cs" Line="6" Column="26" />
+      <File FileName="Assets/Scripts/NPCStatusUI.cs" Line="18" Column="1" />
+      <File FileName="Assets/Scripts/NPC_Barbarian.cs" Line="80" Column="82" />
+      <File FileName="Assets/Scripts/PlayerAgent.cs" Line="26" Column="27" />
+      <File FileName="Assets/Scripts/NPCAgent.cs" Line="19" Column="23" />
+      <File FileName="Assets/Lobby/Documentation.txt" Line="1" Column="1" />
+      <File FileName="Assets/Lobby/Scripts/MyPlayerController.cs" Line="88" Column="6" />
+      <File FileName="Assets/Lobby/Scripts/Bullet.cs" Line="21" Column="26" />
+      <File FileName="Assets/Lobby/Scripts/Health.cs" Line="31" Column="20" />
+      <File FileName="Assets/Lobby/Scripts/EnemyController.cs" Line="10" Column="5" />
+      <File FileName="Assets/Lobby/Scripts/EnemySpawner.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
