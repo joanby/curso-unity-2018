@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Game Lobby.unity
-    guid: 3d1ee6fde8c5947aab2219118f538151
+    path: Assets/Scenes/Main Menu.unity
+    guid: dd8446e875f6e43729286901309ff611
   - enabled: 1
-    path: Assets/Scenes/Networking Game Scene.unity
-    guid: ee07937456f784de1a254db2171d6ab2
+    path: Assets/Scenes/Character Selection.unity
+    guid: 5bf12637136434cbab640e5f369159cb
+  - enabled: 1
+    path: Assets/Scenes/Awakening.unity
+    guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects: {}
