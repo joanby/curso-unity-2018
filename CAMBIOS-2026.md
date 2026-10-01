@@ -2,7 +2,7 @@
 
 > Esta rama es el mismo curso —los cursos de Unity 2018 (partes 1 a 5)—, preparada para abrirse con **Unity 6**. La rama
 > principal sigue exactamente como en el vídeo.
-> Revisado contra el código fuente de Unity 6, pero todavía no se ha abierto en el editor. Si algo no abre o no compila, cuéntalo en la comunidad del curso.
+> Revisado contra el código fuente de Unity 6 y **comprobado abriendo los proyectos en el editor de Unity 6** (octubre de 2026). Si algo no abre o no compila, cuéntalo en la comunidad del curso.
 
 ## Cómo usarla
 
